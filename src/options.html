@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>optionsTitle</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+
+  <body>
+    <table>
+      <tr>
+        <td>
+          <label for="newTabInput" id="newTabLabel">newTabLabel</label>
+        </td>
+        <td>
+          <input
+            type="checkbox"
+            name="newTabInput"
+            id="newTabInput"
+            style="width: 20em"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="localeFromSelect" id="localeFromLabel">localeFromLabel</label>
+        </td>
+        <td>
+          <select name="localeFromSelect" id="localeFromSelect" style="width: 20em">
+            <option value="ar-sa">ar-sa &nbsp;&nbsp;&nbsp; 'العربية'</option>
+            <option value="bg-bg">bg-bg &nbsp;&nbsp;&nbsp; 'Български'</option>
+            <option value="bs-cyrl-ba">
+              bs-cyrl-ba &nbsp;&nbsp;&nbsp; 'Босански'
+            </option>
+            <option value="bs-latn-ba">
+              bs-latn-ba &nbsp;&nbsp;&nbsp; 'Bosanski'
+            </option>
+            <option value="ca-es">ca-es &nbsp;&nbsp;&nbsp; 'Català'</option>
+            <option value="cs-cz">cs-cz &nbsp;&nbsp;&nbsp; 'Čeština'</option>
+            <option value="da-dk">da-dk &nbsp;&nbsp;&nbsp; 'Dansk'</option>
+            <option value="de-AT">
+              de-AT &nbsp;&nbsp;&nbsp; 'Deutsch (Österreich)'
+            </option>
+            <option value="de-CH">
+              de-CH &nbsp;&nbsp;&nbsp; 'Deutsch (Schweiz)'
+            </option>
+            <option value="de-de">de-de &nbsp;&nbsp;&nbsp; 'Deutsch'</option>
+            <option value="el-gr">el-gr &nbsp;&nbsp;&nbsp; 'Ελληνικά'</option>
+            <option value="en-AU">
+              en-AU &nbsp;&nbsp;&nbsp; 'English (Australia)'
+            </option>
+            <option value="en-CA">
+              en-CA &nbsp;&nbsp;&nbsp; 'English (Canada)'
+            </option>
+            <option value="en-GB">
+              en-GB &nbsp;&nbsp;&nbsp; 'English (United Kingdom)'
+            </option>
+            <option value="en-IE">
+              en-IE &nbsp;&nbsp;&nbsp; 'English (Ireland)'
+            </option>
+            <option value="en-IN">
+              en-IN &nbsp;&nbsp;&nbsp; 'English (India)'
+            </option>
+            <option value="en-MY">
+              en-MY &nbsp;&nbsp;&nbsp; 'English (Malaysia)'
+            </option>
+            <option value="en-NZ">
+              en-NZ &nbsp;&nbsp;&nbsp; 'English (New Zealand)'
+            </option>
+            <option value="en-SG">
+              en-SG &nbsp;&nbsp;&nbsp; 'English (Singapore)'
+            </option>
+            <option value="en-us">
+              en-us &nbsp;&nbsp;&nbsp; 'English (United States)'
+            </option>
+            <option value="en-ZA">
+              en-ZA &nbsp;&nbsp;&nbsp; 'English (South Africa)'
+            </option>
+            <option value="es-es">es-es &nbsp;&nbsp;&nbsp; 'Español'</option>
+            <option value="es-MX">
+              es-MX &nbsp;&nbsp;&nbsp; 'Español (México)'
+            </option>
+            <option value="et-ee">et-ee &nbsp;&nbsp;&nbsp; 'Eesti'</option>
+            <option value="eu-es">eu-es &nbsp;&nbsp;&nbsp; 'Euskara'</option>
+            <option value="fi-fi">fi-fi &nbsp;&nbsp;&nbsp; 'Suomi'</option>
+            <option value="fil-ph">fil-ph &nbsp;&nbsp;&nbsp; 'Filipino'</option>
+            <option value="fr-BE">
+              fr-BE &nbsp;&nbsp;&nbsp; 'Français (Belgique)'
+            </option>
+            <option value="fr-CA">
+              fr-CA &nbsp;&nbsp;&nbsp; 'Français (Canada)'
+            </option>
+            <option value="fr-CH">
+              fr-CH &nbsp;&nbsp;&nbsp; 'Français (Suisse)'
+            </option>
+            <option value="fr-fr">fr-fr &nbsp;&nbsp;&nbsp; 'Français'</option>
+            <option value="ga-ie">ga-ie &nbsp;&nbsp;&nbsp; 'Gaeilge'</option>
+            <option value="gl-es">gl-es &nbsp;&nbsp;&nbsp; 'Galego'</option>
+            <option value="he-il">he-il &nbsp;&nbsp;&nbsp; 'עברית‏'</option>
+            <option value="hi-in">hi-in &nbsp;&nbsp;&nbsp; 'हिंदी'</option>
+            <option value="hr-hr">hr-hr &nbsp;&nbsp;&nbsp; 'Hrvatski'</option>
+            <option value="hu-hu">hu-hu &nbsp;&nbsp;&nbsp; 'Magyar'</option>
+            <option value="id-id">
+              id-id &nbsp;&nbsp;&nbsp; 'Bahasa Indonesia'
+            </option>
+            <option value="is-is">is-is &nbsp;&nbsp;&nbsp; 'Íslenska'</option>
+            <option value="it-CH">
+              it-CH &nbsp;&nbsp;&nbsp; 'Italiano (Svizzera)'
+            </option>
+            <option value="it-it">it-it &nbsp;&nbsp;&nbsp; 'Italiano'</option>
+            <option value="ja-jp">ja-jp &nbsp;&nbsp;&nbsp; '日本語'</option>
+            <option value="kk-kz">kk-kz &nbsp;&nbsp;&nbsp; 'қазақ тілі'</option>
+            <option value="ko-kr">ko-kr &nbsp;&nbsp;&nbsp; '한국어'</option>
+            <option value="lb-lu">
+              lb-lu &nbsp;&nbsp;&nbsp; 'Lëtzebuergesch'
+            </option>
+            <option value="lt-lt">lt-lt &nbsp;&nbsp;&nbsp; 'Lietuvių'</option>
+            <option value="lv-lv">lv-lv &nbsp;&nbsp;&nbsp; 'Latviešu'</option>
+            <option value="ms-my">
+              ms-my &nbsp;&nbsp;&nbsp; 'Bahasa Melayu'
+            </option>
+            <option value="mt-mt">mt-mt &nbsp;&nbsp;&nbsp; 'Malti'</option>
+            <option value="nb-NO">
+              nb-NO &nbsp;&nbsp;&nbsp; 'Norsk Bokmål'
+            </option>
+            <option value="nl-BE">
+              nl-BE &nbsp;&nbsp;&nbsp; 'Nederlands (België)'
+            </option>
+            <option value="nl-nl">nl-nl &nbsp;&nbsp;&nbsp; 'Nederlands'</option>
+            <option value="pl-pl">pl-pl &nbsp;&nbsp;&nbsp; 'Polski'</option>
+            <option value="pt-BR">
+              pt-BR &nbsp;&nbsp;&nbsp; 'Português (Brasil)'
+            </option>
+            <option value="pt-pt">
+              pt-pt &nbsp;&nbsp;&nbsp; 'Português (Portugal)'
+            </option>
+            <option value="ro-ro">ro-ro &nbsp;&nbsp;&nbsp; 'Română'</option>
+            <option value="ru-ru">ru-ru &nbsp;&nbsp;&nbsp; 'Русский'</option>
+            <option value="sk-sk">sk-sk &nbsp;&nbsp;&nbsp; 'Slovenčina'</option>
+            <option value="sl-si">sl-si &nbsp;&nbsp;&nbsp; 'Slovenski'</option>
+            <option value="sr-cyrl-rs">
+              sr-cyrl-rs &nbsp;&nbsp;&nbsp; 'Српски'
+            </option>
+            <option value="sr-latn-rs">
+              sr-latn-rs &nbsp;&nbsp;&nbsp; 'Srpski'
+            </option>
+            <option value="sv-se">sv-se &nbsp;&nbsp;&nbsp; 'Svenska'</option>
+            <option value="th-th">th-th &nbsp;&nbsp;&nbsp; 'ไทย''</option>
+            <option value="tr-tr">tr-tr &nbsp;&nbsp;&nbsp; 'Türkçe'</option>
+            <option value="uk-ua">uk-ua &nbsp;&nbsp;&nbsp; 'Українська'</option>
+            <option value="vi-vn">vi-vn &nbsp;&nbsp;&nbsp; 'TiếngViệt'</option>
+            <option value="zh-CN">
+              zh-CN &nbsp;&nbsp;&nbsp; '中文 (简体)'
+            </option>
+            <option value="zh-hk">
+              zh-hk &nbsp;&nbsp;&nbsp; '中文 (繁體 香港特別行政區)'
+            </option>
+            <option value="zh-tw">
+              zh-tw &nbsp;&nbsp;&nbsp; '中文 (繁體)'
+            </option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="localeSelect" id="localeLabel">localeLabel</label>
+        </td>
+        <td>
+          <select name="localeSelect" id="localeSelect" style="width: 20em">
+            <option value="ar-sa">ar-sa &nbsp;&nbsp;&nbsp; 'العربية'</option>
+            <option value="bg-bg">bg-bg &nbsp;&nbsp;&nbsp; 'Български'</option>
+            <option value="bs-cyrl-ba">
+              bs-cyrl-ba &nbsp;&nbsp;&nbsp; 'Босански'
+            </option>
+            <option value="bs-latn-ba">
+              bs-latn-ba &nbsp;&nbsp;&nbsp; 'Bosanski'
+            </option>
+            <option value="ca-es">ca-es &nbsp;&nbsp;&nbsp; 'Català'</option>
+            <option value="cs-cz">cs-cz &nbsp;&nbsp;&nbsp; 'Čeština'</option>
+            <option value="da-dk">da-dk &nbsp;&nbsp;&nbsp; 'Dansk'</option>
+            <option value="de-AT">
+              de-AT &nbsp;&nbsp;&nbsp; 'Deutsch (Österreich)'
+            </option>
+            <option value="de-CH">
+              de-CH &nbsp;&nbsp;&nbsp; 'Deutsch (Schweiz)'
+            </option>
+            <option value="de-de">de-de &nbsp;&nbsp;&nbsp; 'Deutsch'</option>
+            <option value="el-gr">el-gr &nbsp;&nbsp;&nbsp; 'Ελληνικά'</option>
+            <option value="en-AU">
+              en-AU &nbsp;&nbsp;&nbsp; 'English (Australia)'
+            </option>
+            <option value="en-CA">
+              en-CA &nbsp;&nbsp;&nbsp; 'English (Canada)'
+            </option>
+            <option value="en-GB">
+              en-GB &nbsp;&nbsp;&nbsp; 'English (United Kingdom)'
+            </option>
+            <option value="en-IE">
+              en-IE &nbsp;&nbsp;&nbsp; 'English (Ireland)'
+            </option>
+            <option value="en-IN">
+              en-IN &nbsp;&nbsp;&nbsp; 'English (India)'
+            </option>
+            <option value="en-MY">
+              en-MY &nbsp;&nbsp;&nbsp; 'English (Malaysia)'
+            </option>
+            <option value="en-NZ">
+              en-NZ &nbsp;&nbsp;&nbsp; 'English (New Zealand)'
+            </option>
+            <option value="en-SG">
+              en-SG &nbsp;&nbsp;&nbsp; 'English (Singapore)'
+            </option>
+            <option value="en-us">
+              en-us &nbsp;&nbsp;&nbsp; 'English (United States)'
+            </option>
+            <option value="en-ZA">
+              en-ZA &nbsp;&nbsp;&nbsp; 'English (South Africa)'
+            </option>
+            <option value="es-es">es-es &nbsp;&nbsp;&nbsp; 'Español'</option>
+            <option value="es-MX">
+              es-MX &nbsp;&nbsp;&nbsp; 'Español (México)'
+            </option>
+            <option value="et-ee">et-ee &nbsp;&nbsp;&nbsp; 'Eesti'</option>
+            <option value="eu-es">eu-es &nbsp;&nbsp;&nbsp; 'Euskara'</option>
+            <option value="fi-fi">fi-fi &nbsp;&nbsp;&nbsp; 'Suomi'</option>
+            <option value="fil-ph">fil-ph &nbsp;&nbsp;&nbsp; 'Filipino'</option>
+            <option value="fr-BE">
+              fr-BE &nbsp;&nbsp;&nbsp; 'Français (Belgique)'
+            </option>
+            <option value="fr-CA">
+              fr-CA &nbsp;&nbsp;&nbsp; 'Français (Canada)'
+            </option>
+            <option value="fr-CH">
+              fr-CH &nbsp;&nbsp;&nbsp; 'Français (Suisse)'
+            </option>
+            <option value="fr-fr">fr-fr &nbsp;&nbsp;&nbsp; 'Français'</option>
+            <option value="ga-ie">ga-ie &nbsp;&nbsp;&nbsp; 'Gaeilge'</option>
+            <option value="gl-es">gl-es &nbsp;&nbsp;&nbsp; 'Galego'</option>
+            <option value="he-il">he-il &nbsp;&nbsp;&nbsp; 'עברית‏'</option>
+            <option value="hi-in">hi-in &nbsp;&nbsp;&nbsp; 'हिंदी'</option>
+            <option value="hr-hr">hr-hr &nbsp;&nbsp;&nbsp; 'Hrvatski'</option>
+            <option value="hu-hu">hu-hu &nbsp;&nbsp;&nbsp; 'Magyar'</option>
+            <option value="id-id">
+              id-id &nbsp;&nbsp;&nbsp; 'Bahasa Indonesia'
+            </option>
+            <option value="is-is">is-is &nbsp;&nbsp;&nbsp; 'Íslenska'</option>
+            <option value="it-CH">
+              it-CH &nbsp;&nbsp;&nbsp; 'Italiano (Svizzera)'
+            </option>
+            <option value="it-it">it-it &nbsp;&nbsp;&nbsp; 'Italiano'</option>
+            <option value="ja-jp">ja-jp &nbsp;&nbsp;&nbsp; '日本語'</option>
+            <option value="kk-kz">kk-kz &nbsp;&nbsp;&nbsp; 'қазақ тілі'</option>
+            <option value="ko-kr">ko-kr &nbsp;&nbsp;&nbsp; '한국어'</option>
+            <option value="lb-lu">
+              lb-lu &nbsp;&nbsp;&nbsp; 'Lëtzebuergesch'
+            </option>
+            <option value="lt-lt">lt-lt &nbsp;&nbsp;&nbsp; 'Lietuvių'</option>
+            <option value="lv-lv">lv-lv &nbsp;&nbsp;&nbsp; 'Latviešu'</option>
+            <option value="ms-my">
+              ms-my &nbsp;&nbsp;&nbsp; 'Bahasa Melayu'
+            </option>
+            <option value="mt-mt">mt-mt &nbsp;&nbsp;&nbsp; 'Malti'</option>
+            <option value="nb-NO">
+              nb-NO &nbsp;&nbsp;&nbsp; 'Norsk Bokmål'
+            </option>
+            <option value="nl-BE">
+              nl-BE &nbsp;&nbsp;&nbsp; 'Nederlands (België)'
+            </option>
+            <option value="nl-nl">nl-nl &nbsp;&nbsp;&nbsp; 'Nederlands'</option>
+            <option value="pl-pl">pl-pl &nbsp;&nbsp;&nbsp; 'Polski'</option>
+            <option value="pt-BR">
+              pt-BR &nbsp;&nbsp;&nbsp; 'Português (Brasil)'
+            </option>
+            <option value="pt-pt">
+              pt-pt &nbsp;&nbsp;&nbsp; 'Português (Portugal)'
+            </option>
+            <option value="ro-ro">ro-ro &nbsp;&nbsp;&nbsp; 'Română'</option>
+            <option value="ru-ru">ru-ru &nbsp;&nbsp;&nbsp; 'Русский'</option>
+            <option value="sk-sk">sk-sk &nbsp;&nbsp;&nbsp; 'Slovenčina'</option>
+            <option value="sl-si">sl-si &nbsp;&nbsp;&nbsp; 'Slovenski'</option>
+            <option value="sr-cyrl-rs">
+              sr-cyrl-rs &nbsp;&nbsp;&nbsp; 'Српски'
+            </option>
+            <option value="sr-latn-rs">
+              sr-latn-rs &nbsp;&nbsp;&nbsp; 'Srpski'
+            </option>
+            <option value="sv-se">sv-se &nbsp;&nbsp;&nbsp; 'Svenska'</option>
+            <option value="th-th">th-th &nbsp;&nbsp;&nbsp; 'ไทย''</option>
+            <option value="tr-tr">tr-tr &nbsp;&nbsp;&nbsp; 'Türkçe'</option>
+            <option value="uk-ua">uk-ua &nbsp;&nbsp;&nbsp; 'Українська'</option>
+            <option value="vi-vn">vi-vn &nbsp;&nbsp;&nbsp; 'TiếngViệt'</option>
+            <option value="zh-CN">
+              zh-CN &nbsp;&nbsp;&nbsp; '中文 (简体)'
+            </option>
+            <option value="zh-hk">
+              zh-hk &nbsp;&nbsp;&nbsp; '中文 (繁體 香港特別行政區)'
+            </option>
+            <option value="zh-tw">
+              zh-tw &nbsp;&nbsp;&nbsp; '中文 (繁體)'
+            </option>
+          </select>
+        </td>
+      </tr>
+    </table>
+    <div id="status"></div>
+    <button id="save">save</button>
+
+    <script src="options.js"></script>
+  </body>
+</html>

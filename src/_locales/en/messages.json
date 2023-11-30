@@ -1,0 +1,43 @@
+{
+    "appName": {
+        "message": "Jump from en-us to the other page",
+        "description": "Jump from en-us to the other page"
+    },
+    "appDesc": {
+        "message": "Jump and switch from en-us page to the other page based on URL.",
+        "description": "Jump from en-us page to the other page based on URL."
+    },
+    "defaultTitle": {
+        "message": "en <-> the other page"
+    },
+    "popupTitle": {
+        "message": "en <-> the other page jump"
+    },
+    "newTabLabel": {
+        "message": "Open a page in a new tab"
+    },
+    "save": {
+        "message": "Save"
+    },
+    "optionSaved": {
+        "message": "Option was saved."
+    },
+    "optionsTitle": {
+        "message": "Extension Options"
+    },
+    "languageUnknown": {
+        "message": "Language of the URL is not specified in option settings or unknown."
+    },
+    "openInNewTab": {
+        "message": "Language of the URL is _0_. Open in new tab for _1_."
+    },
+    "openInCurrentTab": {
+        "message": "Language of the URL is _0_. Junmp to _1_."
+    },
+    "localeFromLabel": {
+        "message": "Language (locale) of page jumped from"
+    },
+    "localeLabel": {
+        "message": "Language (locale) of page jumped to"
+    }
+}
