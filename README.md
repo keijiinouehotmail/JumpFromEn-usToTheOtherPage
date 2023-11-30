@@ -7,7 +7,7 @@ This is a repository for source code of the Chrome extension "Jump from en-us to
 
 ## Release history
 
-- v2.4.2
+- v2.4.2, v2.4.4
   - Support for Google Cloud websites with `?hl=en` or `?hl=ja` in the URL string
 - v2.4.0
   - Updated to support Manifest V3
