@@ -3,10 +3,12 @@
 This is a repository for source code of the Chrome extension "Jump from en-us to the other page" or "en-us ページから ja-jp ページに素早くジャンプ".
 
 - Chrome Web Store  
-    [https://chrome.google.com/webstore/detail/jump-from-en-us-to-the-ot/ahpbgefcefglpdficedlffmalcdcekic](https://chrome.google.com/webstore/detail/jump-from-en-us-to-the-ot/ahpbgefcefglpdficedlffmalcdcekic)
+    [https://chromewebstore.google.com/detail/jump-from-en-us-to-the-ot/ahpbgefcefglpdficedlffmalcdcekic](https://chromewebstore.google.com/detail/jump-from-en-us-to-the-ot/ahpbgefcefglpdficedlffmalcdcekic)
 
 ## Release history
 
+- v2.4.6
+  - Support for Spanish ('es-es')
 - v2.4.5
   - Changed icon
 - v2.4.2
