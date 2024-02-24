@@ -7,6 +7,8 @@ This is a repository for source code of the Chrome extension "Jump from en-us to
 
 ## Release history
 
+- v2.4.7
+  - Support for URLs like `https://www.example.com/sub1/43_ja.html`
 - v2.4.6
   - Support for Spanish ('es-es')
 - v2.4.5
