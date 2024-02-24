@@ -1,7 +1,7 @@
 ﻿{
     "name": "__MSG_appName__",
     "short_name": "en-us to the other page",
-    "version": "2.4.5",
+    "version": "2.4.7",
     "manifest_version": 3,
     "description": "__MSG_appDesc__",
     "default_locale": "en",

@@ -116,6 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
       function (items) {
         var langFrom, langTo;
         var _url = url.toLowerCase();
+        var _pathname = new URL(url).pathname.toLowerCase();
         var urlTo;
 
         var localeFrom = items.localeFrom;
@@ -171,24 +172,39 @@ document.addEventListener("DOMContentLoaded", function () {
             `?hl=${localeFrom.split("-")[0]}`
           );
         }
+        // "_en.html" or "_en.htm"
+        else if ((new RegExp(`_${_localeFrom.split("-")[0]}\\.html?$`)).test(_pathname)) {
+          langFrom = localeFrom.split("-")[0];
+          langTo = localeTo.split("-")[0];
+          const found = _pathname.match(`_${_localeFrom.split("-")[0]}\\.html?$`);
+          const htmlFrom = found[0];
+          const htmlTo = htmlFrom.replace(`_${_localeFrom.split("-")[0]}`, `_${localeTo.split("-")[0]}`);
+          pathnameTo = _pathname.replace(htmlFrom, htmlTo);
+          const Url = new URL(url);
+          urlTo = `${Url.origin}${pathnameTo}${Url.search}${Url.hash}`;
+        }
+        // "_ja.html" or "_ja.htm"
+        else if ((new RegExp(`_${_localeTo.split("-")[0]}\\.html?$`)).test(_pathname)) {
+          langFrom = localeTo.split("-")[0];
+          langTo = localeFrom.split("-")[0];
+          const found = _pathname.match(`_${_localeTo.split("-")[0]}\\.html?$`);
+          const htmlTo = found[0];
+          const htmlFrom = htmlTo.replace(`_${_localeTo.split("-")[0]}`, `_${localeFrom.split("-")[0]}`);
+          pathnameTo = _pathname.replace(htmlTo, htmlFrom);
+          const Url = new URL(url);
+          urlTo = `${Url.origin}${pathnameTo}${Url.search}${Url.hash}`;
+        }
 
         if (urlTo) {
           if (items.newTab) {
-            renderStatus(
-              chrome.i18n
-                .getMessage("openInNewTab")
-                .replace(/_0_/g, langFrom)
-                .replace(/_1_/g, langTo)
-            );
+            // Do not render, because it opens a new tab.
             chrome.tabs.create({
               url: urlTo,
             });
           } else {
             renderStatus(
               chrome.i18n
-                .getMessage("openInCurrentTab")
-                .replace(/_0_/g, langFrom)
-                .replace(/_1_/g, langTo)
+                .getMessage("openInCurrentTab", [langFrom, langTo])
             );
             chrome.tabs.update({
               url: urlTo,
